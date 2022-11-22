@@ -7,11 +7,23 @@ export default {
 	component: Input,
 } as ComponentMeta<typeof Input>;
 
-export const FormInput: ComponentStory<typeof Input> = (props) => (
+export const Default: ComponentStory<typeof Input> = (props) => (
 	<Input {...props}></Input>
 );
-FormInput.args = {
+Default.args = {
 	name: 'Input',
 	type: 'text',
 	placeholder: 'data',
+	variant: 'default',
+};
+
+export const Error: ComponentStory<typeof Input> = (props) => (
+	<Input {...props}></Input>
+);
+
+Error.args = {
+	name: 'Input',
+	type: 'text',
+	placeholder: 'Wrong data',
+	variant: 'error',
 };
