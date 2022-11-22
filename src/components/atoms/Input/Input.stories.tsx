@@ -8,8 +8,9 @@ export default {
 } as ComponentMeta<typeof Input>;
 
 export const Default: ComponentStory<typeof Input> = (props) => (
-	<Input {...props}></Input>
+	<Input {...props} />
 );
+
 Default.args = {
 	name: 'Input',
 	type: 'text',
@@ -18,7 +19,7 @@ Default.args = {
 };
 
 export const Error: ComponentStory<typeof Input> = (props) => (
-	<Input {...props}></Input>
+	<Input {...props} />
 );
 
 Error.args = {
@@ -26,4 +27,5 @@ Error.args = {
 	type: 'text',
 	placeholder: 'Wrong data',
 	variant: 'error',
+	error: 'Error message',
 };
