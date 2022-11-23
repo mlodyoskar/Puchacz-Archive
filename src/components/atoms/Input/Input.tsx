@@ -9,11 +9,10 @@ interface Props {
 	error: string;
 }
 
-export const Input = ({ children, type, name, placeholder, error }: Props) => {
+export const Input = ({ children, type, placeholder, error }: Props) => {
 	return (
 		<div>
 			<label
-				htmlFor={name}
 				className={cx(
 					{
 						'border-red-400': error,

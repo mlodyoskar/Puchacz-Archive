@@ -12,7 +12,6 @@ export const Default: ComponentStory<typeof Input> = (props) => (
 );
 
 Default.args = {
-	name: 'Input',
 	type: 'text',
 	placeholder: 'data',
 };
@@ -22,7 +21,6 @@ export const Error: ComponentStory<typeof Input> = (props) => (
 );
 
 Error.args = {
-	name: 'Input',
 	type: 'text',
 	placeholder: 'Wrong data',
 	error: 'Error message',
