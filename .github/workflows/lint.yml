@@ -1,28 +1,21 @@
 name: Lint
 
 on:
-  push:
-    branches: ['main']
-  pull_request:
-    branches: ['main']
-    
-env:
-  DATABASE_URL: file:./db.sqlite
-  NEXTAUTH_SECRET: placeholder
-  NEXTAUTH_URL: http://localhost:3000
-  DISCORD_CLIENT_ID: placeholder
-  DISCORD_CLIENT_SECRET: placeholder
+ push:
+  branches: ['main']
+ pull_request:
+  branches: ['main']
 
 jobs:
-  lint:
-    runs-on: ubuntu-latest
+ lint:
+  runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js 16
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16.0
-          cache: 'yarn'
-      - run: yarn install
-      - run: yarn next lint
+  steps:
+   - uses: actions/checkout@v3
+   - name: Use Node.js 16
+     uses: actions/setup-node@v3
+     with:
+      node-version: 16.0
+      cache: 'yarn'
+   - run: yarn install
+   - run: yarn next lint
