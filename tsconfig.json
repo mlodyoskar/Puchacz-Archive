@@ -20,10 +20,9 @@
 			"atoms/*": ["components/atoms/*"],
 			"molecules/*": ["components/molecules/*"],
 			"organisms/*": ["components/organisms/*"],
-			// "templates/*": ["components/templates/*"],
-			// "layouts/*": ["components/layouts/*"],
-			"utils/*": ["utils/*"]
-			// "icons/*": ["components/icons/*"]
+			"layouts/*": ["components/layouts/*"],
+			"utils/*": ["utils/*"],
+			"icons/*": ["../public/icons/*"]
 		}
 	},
 	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.cjs", "**/*.mjs"],
