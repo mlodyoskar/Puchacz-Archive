@@ -5,11 +5,15 @@ type Variants = 'default' | 'warning';
 
 interface Props {
 	children: React.ReactNode;
-	size: 'small' | 'medium';
-	variant: Variants;
+	size?: 'small' | 'medium';
+	variant?: Variants;
 }
 
-export const Button = ({ children, variant, size }: Props) => {
+export const Button = ({
+	children,
+	variant = 'default',
+	size = 'medium',
+}: Props) => {
 	return (
 		<button
 			type="button"
