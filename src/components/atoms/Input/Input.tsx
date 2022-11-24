@@ -4,7 +4,6 @@ import cx from 'clsx';
 interface Props {
 	children: React.ReactNode;
 	type: React.HTMLInputTypeAttribute;
-	name: string;
 	placeholder: string;
 	error: string;
 }
