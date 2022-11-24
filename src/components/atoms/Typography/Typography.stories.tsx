@@ -14,6 +14,7 @@ export const h1: ComponentStory<typeof Typography> = (props) => (
 h1.args = {
 	component: 'h1',
 };
+
 export const h2: ComponentStory<typeof Typography> = (props) => (
 	<Typography {...props}>h2 tag</Typography>
 );
@@ -21,6 +22,7 @@ export const h2: ComponentStory<typeof Typography> = (props) => (
 h2.args = {
 	component: 'h2',
 };
+
 export const h3: ComponentStory<typeof Typography> = (props) => (
 	<Typography {...props}>h3 tag</Typography>
 );
@@ -28,6 +30,7 @@ export const h3: ComponentStory<typeof Typography> = (props) => (
 h3.args = {
 	component: 'h3',
 };
+
 export const h4: ComponentStory<typeof Typography> = (props) => (
 	<Typography {...props}>h4 tag</Typography>
 );
@@ -35,6 +38,7 @@ export const h4: ComponentStory<typeof Typography> = (props) => (
 h4.args = {
 	component: 'h4',
 };
+
 export const h5: ComponentStory<typeof Typography> = (props) => (
 	<Typography {...props}>h5 tag</Typography>
 );
@@ -42,6 +46,7 @@ export const h5: ComponentStory<typeof Typography> = (props) => (
 h5.args = {
 	component: 'h5',
 };
+
 export const h6: ComponentStory<typeof Typography> = (props) => (
 	<Typography {...props}>h6 tag</Typography>
 );
@@ -57,6 +62,7 @@ export const P: ComponentStory<typeof Typography> = (props) => (
 P.args = {
 	component: 'p',
 };
+
 export const Span: ComponentStory<typeof Typography> = (props) => (
 	<Typography {...props}>span tag</Typography>
 );
