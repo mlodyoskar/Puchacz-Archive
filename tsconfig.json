@@ -17,13 +17,12 @@
 		"noUncheckedIndexedAccess": true,
 		"baseUrl": ".",
 		"paths": {
-			"atoms/*": ["components/atoms/*"],
-			"molecules/*": ["components/molecules/*"],
-			"organisms/*": ["components/organisms/*"],
-			// "templates/*": ["components/templates/*"],
-			// "layouts/*": ["components/layouts/*"],
-			"utils/*": ["utils/*"]
-			// "icons/*": ["components/icons/*"]
+			"atoms/*": ["src/components/atoms/*"],
+			"molecules/*": ["src/components/molecules/*"],
+			"organisms/*": ["src/components/organisms/*"],
+			"layouts/*": ["src/components/layouts/*"],
+			"utils/*": ["src/utils/*"],
+			"icons/*": ["public/icons/*"]
 		}
 	},
 	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.cjs", "**/*.mjs"],
