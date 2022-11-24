@@ -3,7 +3,7 @@ import cx from 'clsx';
 
 interface Props {
 	children: React.ReactNode;
-	component: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p';
+	component: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span';
 }
 
 export const Typography = ({ children, component }: Props) => {
@@ -11,7 +11,7 @@ export const Typography = ({ children, component }: Props) => {
 	return (
 		<Component
 			className={cx({
-				'text-xs': component === 'h6' || component === 'p',
+				'text-xs': component === 'h6' || component === 'p' || component === 'span',
 				'text-sm': component === 'h5',
 				'text-base': component === 'h4',
 				'text-lg': component === 'h3',
