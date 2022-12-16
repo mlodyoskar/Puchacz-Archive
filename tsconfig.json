@@ -14,18 +14,12 @@
 		"isolatedModules": true,
 		"jsx": "preserve",
 		"incremental": true,
-		"noUncheckedIndexedAccess": true,
-		"baseUrl": ".",
+		"baseUrl": "./",
 		"paths": {
-			"atoms/*": ["components/atoms/*"],
-			"molecules/*": ["components/molecules/*"],
-			"organisms/*": ["components/organisms/*"],
-			// "templates/*": ["components/templates/*"],
-			// "layouts/*": ["components/layouts/*"],
-			"utils/*": ["utils/*"]
-			// "icons/*": ["components/icons/*"]
+			"components": ["components"],
+			"icons": ["components/icons"]
 		}
 	},
-	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.cjs", "**/*.mjs"],
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
 	"exclude": ["node_modules"]
 }
