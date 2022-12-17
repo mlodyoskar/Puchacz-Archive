@@ -27,7 +27,7 @@ export const Button = ({
 					'bg-red-600 hover:bg-red-800  focus:ring-red-300': variant === 'warning',
 					'w-full': fullWidth,
 				},
-				'mr-2 mb-2 rounded-lg  px-5 py-2.5 text-sm font-medium text-white focus:outline-none focus:ring-4'
+				'mr-2 mb-2 rounded-lg flex gap-2 justify-center  px-5 py-2.5 text-sm font-medium text-white focus:outline-none focus:ring-4'
 			)}
 		>
 			{children}
